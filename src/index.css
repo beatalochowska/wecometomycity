@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'BerkshireSwash';
+  src: local('BerkshireSwash'), url(./fonts/BerkshireSwash-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lobster';
+  src: local('Lobster'), url(./fonts/Lobster-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Merienda';
+  src: local('Merienda'), url(./fonts/Merienda-Regular.ttf) format('truetype');
+}
+
+
+body {
+  margin: 0;
+  font-family: BerkshireSwash, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

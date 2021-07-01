@@ -1,0 +1,12 @@
+.cardsSet {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-family: Lobster, serif;
+}
+
+@media (min-width: 920px) {
+  .cardsSet {
+    width: 920px;
+  }
+}

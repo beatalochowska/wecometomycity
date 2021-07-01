@@ -1,0 +1,68 @@
+@import "../../../styles/colors.scss";
+
+.card {
+  position: relative;
+  width: 100%;
+  margin: 2%;
+  padding-top: 30%;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardContent {
+  position: absolute;
+  font-weight: 700;
+  font-size: 55px;
+  right: 0;
+  left: 0;
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardText {
+  margin: 0;
+  max-height: 105px;
+}
+
+.stock {
+  color: $stock;
+  border: 10px solid $stock;
+}
+
+.work {
+  color: $work;
+  border: 10px solid $work;
+}
+
+.fence {
+  color: $fence;
+  border: 10px solid $fence;
+}
+
+.park {
+  color: $park;
+  border: 10px solid $park;
+}
+
+.pool {
+  color: $pool;
+  border: 10px solid $pool;
+}
+.bis {
+  color: $bis;
+  border: 10px solid $bis;
+}
+
+@media (min-width: 920px) {
+  .card {
+    width: 270px;
+    height: 296px;
+    padding: 0;
+  }
+}

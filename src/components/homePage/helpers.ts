@@ -43,6 +43,6 @@ export const getCurrentCards = (
 export const randomiseCardsList = (seed: string): Card[] => {
   return getListOFNumbersFeaturesWithSortedIds(
     getRandomisedList([...features], seed),
-    getRandomisedList([...numbers], seed)
+    getRandomisedList([...numbers], seed.split("").reverse().join(""))
   );
 };

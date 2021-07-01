@@ -40,9 +40,7 @@ export default function HomePage(): JSX.Element {
     setUserSeed(userSeed + "la123");
     setRandomisedList(randomiseCardsList(userSeed));
 
-    setCurrentCardsValues(
-      getCurrentCards(cardsList, currentCardIndex, cardsAmount)
-    );
+    setCurrentCardsValues(getCurrentCards(cardsList, currentCardIndex));
   };
 
   const handleChangeUserSeed = (event: any): void => {
@@ -53,6 +51,7 @@ export default function HomePage(): JSX.Element {
     event.preventDefault();
     setShouldRandomiseCards(true);
     const newRandomisedList = randomiseCardsList(userSeed);
+    setRandomisedList(newRandomisedList);
 
     setCurrentCardsSet(newRandomisedList, currentCardIndex);
   };
@@ -67,6 +66,7 @@ export default function HomePage(): JSX.Element {
   return (
     <section className={styles.homePage}>
       <h1 className={styles.title}>Welcome to my street</h1>
+
       {!shouldShowCards ? (
         <UserSeedInput
           onSubmit={handleSeedSubmit}

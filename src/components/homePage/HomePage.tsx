@@ -20,6 +20,7 @@ export default function HomePage(): JSX.Element {
   const [randomisedList, setRandomisedList] = useState<Card[]>(
     randomiseCardsList(userSeed)
   );
+  const [currentRound, setCurrentRound] = useState<number>(1);
 
   const setCurrentCardsSet = (
     cardsList: Card[],
@@ -60,19 +61,22 @@ export default function HomePage(): JSX.Element {
     event.preventDefault();
 
     setCurrentCardsSet(randomisedList, currentCardIndex);
+    setCurrentRound(currentRound + 1);
   };
 
   return (
     <section className={styles.homePage}>
+      {console.log(currentRound)}
       <h1 className={styles.title}>Welcome to my street</h1>
-      <UserSeedInput
-        onSubmit={handleSeedSubmit}
-        userInput={userSeed}
-        onUserInputChange={handleChangeUserSeed}
-      />
-
-      {shouldShowCards && (
+      {!shouldShowCards ? (
+        <UserSeedInput
+          onSubmit={handleSeedSubmit}
+          userInput={userSeed}
+          onUserInputChange={handleChangeUserSeed}
+        />
+      ) : (
         <>
+          <h2>{`Runda: ${currentRound}`}</h2>
           <CardsSet currentCards={currentCardsValues} />
           <button className={styles.button} onClick={handleNextClick}>
             NEXT

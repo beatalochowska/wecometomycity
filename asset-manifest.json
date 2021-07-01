@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/wecometomycity/static/css/main.ce74d43a.chunk.css",
+    "main.js": "/wecometomycity/static/js/main.ad8dab37.chunk.js",
+    "main.js.map": "/wecometomycity/static/js/main.ad8dab37.chunk.js.map",
+    "runtime-main.js": "/wecometomycity/static/js/runtime-main.7287a1a0.js",
+    "runtime-main.js.map": "/wecometomycity/static/js/runtime-main.7287a1a0.js.map",
+    "static/js/2.117e02c3.chunk.js": "/wecometomycity/static/js/2.117e02c3.chunk.js",
+    "static/js/2.117e02c3.chunk.js.map": "/wecometomycity/static/js/2.117e02c3.chunk.js.map",
+    "static/js/3.38b91ff3.chunk.js": "/wecometomycity/static/js/3.38b91ff3.chunk.js",
+    "static/js/3.38b91ff3.chunk.js.map": "/wecometomycity/static/js/3.38b91ff3.chunk.js.map",
+    "index.html": "/wecometomycity/index.html",
+    "static/css/main.ce74d43a.chunk.css.map": "/wecometomycity/static/css/main.ce74d43a.chunk.css.map",
+    "static/js/2.117e02c3.chunk.js.LICENSE.txt": "/wecometomycity/static/js/2.117e02c3.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/wecometomycity/static/media/Merienda-Regular.650d7290.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7287a1a0.js",
+    "static/js/2.117e02c3.chunk.js",
+    "static/css/main.ce74d43a.chunk.css",
+    "static/js/main.ad8dab37.chunk.js"
+  ]
+}

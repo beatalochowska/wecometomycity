@@ -66,7 +66,6 @@ export default function HomePage(): JSX.Element {
 
   return (
     <section className={styles.homePage}>
-      {console.log(currentRound)}
       <h1 className={styles.title}>Welcome to my street</h1>
       {!shouldShowCards ? (
         <UserSeedInput

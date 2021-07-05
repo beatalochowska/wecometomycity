@@ -1,0 +1,33 @@
+.button {
+  height: 50px;
+  width: 200px;
+  background-color: rgb(92, 133, 194);
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  color: white;
+  font-family: Merienda, sansserif;
+  font-size: 20px;
+  margin: 20px;
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    background-color: rgb(51, 78, 119);
+    cursor: pointer;
+  }
+  &:active {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translateY(1px);
+  }
+  &Back {
+    @extend .button;
+    background-color: rgb(192, 78, 78);
+    &:hover {
+      background-color: rgb(110, 38, 38);
+    }
+    &:disabled {
+      background-color: grey;
+      cursor: not-allowed;
+    }
+  }
+}

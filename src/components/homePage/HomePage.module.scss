@@ -10,28 +10,6 @@
   color: rgb(59, 59, 59);
 }
 
-.button {
-  height: 50px;
-  width: 200px;
-  background-color: rgb(92, 133, 194);
-  border-radius: 50px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border: none;
-  color: white;
-  font-family: Merienda, sansserif;
-  font-size: 20px;
-  margin-top: 20px;
-  transition: all 0.1s ease-in-out;
-  &:hover {
-    background-color: rgb(51, 78, 119);
-  }
-  &:active {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transform: translateY(1px);
-  }
-}
-
 @media (min-width: 600px) {
   .title {
     font-size: 48px;
